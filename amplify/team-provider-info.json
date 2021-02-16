@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-retrospective-dev-202711-authRole",
+      "UnauthRoleArn": "arn:aws:iam::648006274802:role/amplify-retrospective-dev-202711-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::648006274802:role/amplify-retrospective-dev-202711-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-retrospective-dev-202711-deployment",
+      "UnauthRoleName": "amplify-retrospective-dev-202711-unauthRole",
+      "StackName": "amplify-retrospective-dev-202711",
+      "StackId": "arn:aws:cloudformation:eu-west-1:648006274802:stack/amplify-retrospective-dev-202711/5a80ca80-7095-11eb-97f7-0adfcf7776fd",
+      "AmplifyAppId": "d2h44bgwip47z3"
+    }
+  }
+}
