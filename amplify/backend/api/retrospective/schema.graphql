@@ -1,0 +1,34 @@
+type User
+@model
+{
+  id: ID!
+  name: String!
+  imageUrl: String!
+  team: Team @connection(keyName: "TeamUsers")
+}
+
+type Team
+@model
+{
+  id: ID!
+  name: String!
+  users: [User] @connection(keyName: "TeamUsers")
+  retros: [Retro] @connection(keyName: "TeamRetros")
+}
+
+type Retro
+@model
+{
+  id: ID!
+  name: String!
+  posts: [Post] @connection(keyName: "RetroPosts")
+  team: Team  @connection(keyName: "TeamRetros")
+}
+
+type Post
+@model
+{
+  id: ID!
+  content: String!
+  retro: Retro @connection(keyName: "RetroPosts")
+}
